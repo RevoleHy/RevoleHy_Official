@@ -42,10 +42,12 @@
     }
     h2 {
         padding: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
         font-size: 28pt;
         text-align : left;
         font-family: 'Nanum Myeongjo', serif;
-        font-weight: 800;
+        font-weight: bold;
     }
     .h3Text {
         font-size: 24pt;
@@ -54,6 +56,13 @@
         color : #c5c5c5;
         font-size: 10pt;
         margin: 10px;
+    }
+    img {
+        width : 100%;
+        margin-bottom: 40px;
+    }
+    .blank {
+        margin-bottom: 200px;
     }
     </style>
 </head>
@@ -68,5 +77,13 @@
     <br><small>역사계 공개 인스타 계정</small></button>
     
     <h2>오늘의 역사</h2>
+    <script>
+        var today = new Date();
+
+        var month = ('0' + (today.getMonth() + 1)).slice(-2);
+        var date = ('0' + (today.getDate())).slice(-2); //앞에 0 붙이고 뒤에 두자리만 잘라서 반환
+        document.write('<img src="./source/histoiredAujourdhui/' + month + '/' + month + date + '.jpg">');
+    </script>
+    <div class="blank"></div>
 </body>
     
