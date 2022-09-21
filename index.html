@@ -1,30 +1,72 @@
 <head>
-<link rel="shortcut icon" type="image/x-icon" href="./source/image/icon.png">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lalezar&family=M+PLUS+1p&family=Ma+Shan+Zheng&family=Mada&family=Noto+Sans+KR&family=Noto+Sans+SC&family=Noto+Sans+TC&family=Podkova&family=Song+Myung&family=Staatliches&family=Yeseva+One&display=swap" rel="stylesheet">
-<style>
-body {
- text-align : center;
- font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
- margin: 0;
-}
-.button {
- width : 80%;
- heigth : 10%;
- background-color : #D3D3D3;
- border-radius : 10px;
-}
-</style>
+    <title>RevoleHy 메인페이지</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./source/image/icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+    body {
+        text-align : center;
+        font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    .button {
+        font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
+        position : relative ;
+        border : 3px solid #FC80A5;
+        color : #FC80A5;
+        width : 80%;
+        background : #ffffff;
+        margin: 10px;
+        border-radius : 10px;
+        transition : 0.5s;
+    }
+    .button:hover {
+        background: linear-gradient(to right, #FC80A5 0%, #558BCF 100%);
+        color: white;
+    }
+    .RevoleHy {
+        background: linear-gradient(to right, #FC80A5 0%, #558BCF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        margin: 0;
+    }
+    h1 {
+        padding: 40px;
+        font-size: 40pt;
+    }
+    h2 {
+        padding: 30px;
+        font-size: 28pt;
+        text-align : left;
+        font-family: 'Nanum Myeongjo', serif;
+        font-weight: bold;
+    }
+    .h3Text {
+        font-size: 24pt;
+    }
+    small {
+        color : #c5c5c5;
+        font-size: 10pt;
+        margin: 10px;
+    }
+    </style>
 </head>
-
+    
 <body>
-<h1>RevoleHy Official</h1>
-<br>
-<a href="https://www.instagram.com/revolehy/">
-<div class="button">RevoleHy_Insta<br><small>개인 비공계 인스타 계정</small></div>
-</a>
-<a href="https://www.instagram.com/revolehy_official/">
-<div class="button">RevoleHy_Official<br><small>역사계 공개 인스타 계정</small></div>
-</a>
+    <h1 class="RevoleHy">RevoleHy Official</h1>
+    <p>최종 업데이트 : 2022.09.21.<br>업데이트 예정</p>
+    <button class="button" onclick="location.href='https://www.instagram.com/revolehy/'"><span class="h3Text">RevoleHy_Insta</span>
+    <br><small>개인 비공계 인스타 계정</small></button>
+    <br>
+    <button class="button" onclick="location.href='https://www.instagram.com/revolehy_official/'"><span class="h3Text">RevoleHy_Official</span>
+    <br><small>역사계 공개 인스타 계정</small></button>
+    
+    <h2>오늘의 역사</h2>
 </body>
+    
