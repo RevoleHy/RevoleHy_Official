@@ -3,87 +3,48 @@
     <link rel="shortcut icon" type="image/x-icon" href="./source/image/icon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&display=swap" rel="stylesheet">
-    <style>
-    body {
-        text-align : center;
-        font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
-        margin: 0;
-    }
-    a {
-        text-decoration: none;
-    }
-    .button {
-        font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
-        position : relative ;
-        border : 3px solid #FC80A5;
-        color : #FC80A5;
-        width : 80%;
-        background : #ffffff;
-        margin: 10px;
-        border-radius : 10px;
-        transition : 0.5s;
-    }
-    .button:hover {
-        background: linear-gradient(to right, #FC80A5 0%, #558BCF 100%);
-        color: white;
-    }
-    .RevoleHy {
-        background: linear-gradient(to right, #FC80A5 0%, #558BCF 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: bold;
-        margin: 0;
-    }
-    h1 {
-        padding: 40px;
-        font-size: 40pt;
-    }
-    h2 {
-        padding: 30px;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        font-size: 28pt;
-        text-align : left;
-        font-family: 'Nanum Myeongjo', serif;
-        font-weight: bold;
-    }
-    .h3Text {
-        font-size: 24pt;
-    }
-    small {
-        color : #c5c5c5;
-        font-size: 10pt;
-        margin: 10px;
-    }
-    img {
-        width : 100%;
-        margin-bottom: 40px;
-    }
-    .blank {
-        margin-bottom: 200px;
-    }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
     
 <body>
-    <h1 class="RevoleHy">RevoleHy Official</h1>
-    <p>최종 업데이트 : 2022.09.21.<br>업데이트 예정</p>
-    <button class="button" onclick="location.href='https://www.instagram.com/revolehy/'"><span class="h3Text">RevoleHy_Insta</span>
-    <br><small>개인 비공계 인스타 계정</small></button>
-    <br>
-    <button class="button" onclick="location.href='https://www.instagram.com/revolehy_official/'"><span class="h3Text">RevoleHy_Official</span>
-    <br><small>역사계 공개 인스타 계정</small></button>
-    
-    <h2>오늘의 역사</h2>
-    <script>
-        var today = new Date();
+    <header>
+        <h1 id="RevoleHy">RevoleHy Official<br><small>더 넓은 세계를 향해서</small></h1>
+        <p>최종 업데이트 : 2022.10.01.<br>지속적으로 업데이트 예정</p>
+        <ul id="mainmenu">
+            <li class="blankList"></li>
+            <li><a href="./text/langue/index.html">언어<br><small>- Languepedia 2023 -</small></a></li>
+            <li><a href="./text/mathematiques/index.html">수학<br><small>- MATHEMATICA -</small></a></li>
+            <li><a href="./text/histoire/index.html">역사<br><small>- Histoire : Histoire de tout -</small></a></li>
+            <li class="blankList"></li>
+        </ul>
+    </header>
 
-        var month = ('0' + (today.getMonth() + 1)).slice(-2);
-        var date = ('0' + (today.getDate())).slice(-2); //앞에 0 붙이고 뒤에 두자리만 잘라서 반환
-        document.write('<img src="./source/histoiredAujourdhui/' + month + '/' + month + date + '.jpg">');
-    </script>
+
+    <div id="insta">
+        <button class="button" onclick="location.href='https://www.instagram.com/revolehy/'"><span class="h3Text">RevoleHy_Insta</span>
+            <br><small>개인 비공계 인스타 계정</small></button>
+            <br>
+            <button class="button" onclick="location.href='https://www.instagram.com/revolehy_official/'"><span class="h3Text">RevoleHy_Official</span>
+            <br><small>역사계 공개 인스타 계정</small></button>
+    </div>
+    
+        <h2 class="subTitle">오늘의 역사</h2>
+        <div id="histoiredAh">
+            <script>
+                var today = new Date();
+    
+                var month = ('0' + (today.getMonth() + 1)).slice(-2);
+                var date = ('0' + (today.getDate())).slice(-2); //앞에 0 붙이고 뒤에 두자리만 잘라서 반환
+                document.write('<img src="./source/histoiredAujourdhui/' + month + '/' + month + date + '.jpg">');
+            </script>
+        </div>
     <div class="blank"></div>
 </body>
     
