@@ -12,23 +12,24 @@ header {
 }
 #mainmenu {
     width: 100%;
-    height: auto;
+    height: 60px;
     color: #ffffff;
     font-family: 'Cabin', 'Noto Sans KR', sans-serif;
     font-weight: 700;
     padding: 0;
     margin: 0;
+    box-shadow: 0px 7px 5px  gray;
 }
 #mainmenu li {
     background-color: #ffffff;
     float: left;
     width: 20%;
+    height: 60px;
 }
 #mainmenu li a {
     display: block;
     padding: 10px;
     color: #808080;
-    box-shadow: 0px 7px 5px -5px gray;
     z-index: 5;
 }
 #mainmenu .blankList {
@@ -49,6 +50,22 @@ header {
 a {
     text-decoration: none;
 }
+.buttonNaver {
+    font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
+    position : relative ;
+    border : 3px solid #00C73C;
+    color : #00C73C;
+    width : 80%;
+    background : #ffffff;
+    margin: 10px;
+    border-radius : 10px;
+    transition : 0.5s;
+}
+.buttonNaver:hover {
+    background: #00C73C;
+    color: white;
+}
+
 .button {
     font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
     position : relative ;
@@ -64,6 +81,10 @@ a {
     background: linear-gradient(to right, #FC80A5 0%, #558BCF 100%);
     color: white;
 }
+
+
+
+
 #RevoleHy {
     font-family: 'Cabin', sans-serif;
     font-weight: 700;
@@ -114,6 +135,10 @@ img {
 }
 .blank {
     margin-bottom: 200px;
+    z-index: 5;
+}
+.blankmini {
+    margin-bottom: 50px;
     z-index: 5;
 }
 
