@@ -1,0 +1,20 @@
+#HistoireMain {
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    background: linear-gradient(to right, #ffe3aa 0%, #8F784B 100%);
+    color: #ffffff;
+    margin: 0;
+}
+#HistoireMainMini {
+    font-size: 24pt;
+}
+#HistoireMain small {
+    color: black;
+}
+
+@media(max-width:600px) {
+    #HistoireMain {
+        font-size: 32pt;
+    }
+}
