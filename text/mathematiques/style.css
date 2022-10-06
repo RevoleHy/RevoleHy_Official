@@ -8,3 +8,9 @@
 #MATHEMATICA small {
     color: black;
 }
+
+@media(max-width:600px) {
+    #MATHEMATICA {
+        font-size: 32pt;
+    }
+}

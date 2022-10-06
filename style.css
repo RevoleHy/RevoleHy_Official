@@ -41,9 +41,6 @@ header {
     padding-top: 16px;
     padding-bottom: 16px;
     margin: 0;
-    position: relative;
-    top: auto;
-    transition:all .3s;
 }
 
 
