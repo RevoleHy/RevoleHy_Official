@@ -2,7 +2,7 @@
     font-family: 'Cabin', sans-serif;
     text-align: left;
     font-weight: 700;
-    background: linear-gradient(to right, #ffe3aa 0%, #8F784B 100%);
+    background: linear-gradient(to right, #ffe3aa 0%, #558BCF 100%); /* #8F784B */
     color: #ffffff;
     margin: 0;
 }
