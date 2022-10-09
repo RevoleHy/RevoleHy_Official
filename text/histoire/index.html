@@ -10,8 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="./style.css">
+    <script>
+        var url = document.location.href;
+        if (url.includes('?')) {
+            var parameter = url.split("?");
+        } else {
+            var parameter = 'chronologie';
+        }
+        $(document).ready(function(){
+            $("#article").load("./article/"+parameter+".html");      
+        });
+    </script>
 </head>
 
 <body>
@@ -26,8 +38,12 @@
             <li class="blankList">...</li>
         </ul>
     </header>
+    
+    <div id="article">
+    </div>
+
     <div class="blank"></div>
-    <p id="updateLog">최종 업데이트 : 2022.10.07.<br>추후 업데이트 예정</p>
+    <p id="updateLog">최종 업데이트 : 2022.10.09.<br>추후 업데이트 예정</p>
     <div class="blankmini"></div>
     <div id="insta">
         <button class="button" onclick="location.href='../../index.html'"><span class="h3Text">RevoleHy</span>

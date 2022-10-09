@@ -3,7 +3,7 @@
     text-align: left;
     font-weight: 700;
     background: linear-gradient(to right, #ffe3aa 0%, #558BCF 100%); /* #8F784B */
-    color: #ffffff;
+    color: #3c3c3c;
     margin: 0;
 }
 #HistoireMainMini {
@@ -11,6 +11,17 @@
 }
 #HistoireMain small {
     color: black;
+}
+table {
+    text-align: left;
+}
+.SpaceTime {
+    background-color: #73a1d8;
+    color: #ffffff;
+}
+td {
+    padding: 5px;
+    padding-left: 10px;
 }
 
 @media(max-width:600px) {
