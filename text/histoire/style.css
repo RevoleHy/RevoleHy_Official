@@ -57,10 +57,21 @@ table {
 td {
     padding: 5px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media(max-width:600px) {
     #HistoireMain {
         font-size: 32pt;
+    }
+    .Left {
+        font-size: 16pt;
+    }
+    .Link {
+        font-size: 14pt;
+        width:auto;
+    }
+    table {
+        margin: 10px;
     }
 }
