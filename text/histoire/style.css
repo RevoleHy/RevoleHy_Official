@@ -1,0 +1,66 @@
+#HistoireMain {
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    background: linear-gradient(to right, #ffe3aa 0%, #558BCF 100%); /* #8F784B */
+    color: #3c3c3c;
+    margin: 0;
+}
+#HistoireMainMini {
+    font-size: 24pt;
+}
+#HistoireMain small {
+    color: black;
+}
+table {
+    text-align: left;
+}
+.Blue {
+    background-color: #73a1d8;
+    color: #000000;
+}
+.Yellow {
+    background-color: #ffe3aa;
+    color: #000000;
+}
+.Pink {
+    background-color: #FC80A5;
+    color: #000000;
+}
+.Left {
+    font-size: 20pt;
+    font-weight: bold;
+    width: 30%;
+}
+.Link {
+    display: block;
+    text-decoration: none;
+    font-size: 18pt;
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f4f4f4;
+    transition : 0.5s;
+}
+.LYellow:hover {
+    background: #ffe3aa;
+    color: #ffffff;
+}
+.LPink:hover {
+    background: #FC80A5;
+    color: #ffffff;
+}
+table {
+    width: 100%;
+}
+td {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+@media(max-width:600px) {
+    #HistoireMain {
+        font-size: 32pt;
+    }
+}
